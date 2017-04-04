@@ -10,7 +10,9 @@ namespace myApp.Controllers
 {
     public class ContactController : ApiController
     {
-        return new Contact[]
+        public Contact[] Get()
+        {
+            return new Contact[]
     {
         new Contact
         {
@@ -23,5 +25,6 @@ namespace myApp.Controllers
             Name = "Dan Roth"
         }
     };
+        }
     }
 }
